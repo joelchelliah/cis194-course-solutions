@@ -65,3 +65,17 @@ whatWentWrong = foldr relevantMsg [] . inOrder . build
           | i >= 50        = msg:acc
           | otherwise      = acc
         relevantMsg  _ acc = acc
+
+
+------------------- Exercise 6 -------------------
+
+{- |- Mustardwatch opened, please close for proper functioning!
+    - All backup mustardwatches are busy
+    - Depletion of mustard stores detected!
+    - Hard drive failure: insufficient mustard
+    - All backup mustardwatches are busy
+    - Twenty seconds remaining until out-of-mustard condition
+    - Ten seconds remaining until out-of-mustard condition
+    - Empty mustard reservoir! Attempting to recover...
+    - Recovery failed! Initiating shutdown sequence"
+    -}
