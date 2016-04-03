@@ -1,12 +1,18 @@
+{-# OPTIONS_GHC -Wall #-}
 module Hanoi(hanoi, hanoi4) where
 
 type Peg  = String
 type Move = (Peg, Peg)
 
+------------------- Exercise 5 -------------------
+
 hanoi :: Int -> Peg -> Peg -> Peg -> [Move]
 hanoi n a b c
   | n <= 0    = []
   | otherwise = hanoi (n - 1) a c b ++ (a, b) : hanoi (n - 1) c b a
+
+
+------------------- Exercise 6 -------------------
 
 hanoi4 :: Int -> Peg -> Peg -> Peg -> Peg -> [Move]
 hanoi4 n a b c d
