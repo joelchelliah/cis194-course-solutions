@@ -1,12 +1,12 @@
 {-# LANGUAGE FlexibleInstances #-} -- Exercise 4
-{-# OPTIONS_GHC -Wall #-}
+{-# OPTIONS_GHC -Wall          #-}
 module JoinList where
 
-import Data.Monoid
-import Sized    -- Exercise 2
-import Scrabble -- Exercise 3
-import Buffer   -- Exercise 4
-import Editor   -- Exercise 4
+import           Data.Monoid((<>))
+import           Sized    -- Exercise 2
+import           Scrabble -- Exercise 3
+import           Buffer   -- Exercise 4
+import           Editor   -- Exercise 4
 
 
 ------------------- Exercise 1 -------------------
